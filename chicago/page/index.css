@@ -32,6 +32,24 @@ body {
   position: absolute;
 }
 
+#task-bar-aligner {
+  width: 595px;
+  height: 30px;
+  position: relative;
+}
+
 #start {
-  width: 60px;
+  top: 50px;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+}
+
+#timedate {
+  top: 5px;
+  width: 50px;
+  border-style: inset;
+  right: 2px;
+  font-size: 15px;
+  position: absolute;l
 }
