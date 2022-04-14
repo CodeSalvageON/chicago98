@@ -16,3 +16,22 @@ body {
 #loading-screen {
   display: none;
 }
+
+#desktop {
+  width: 600px;
+  height: 500px;
+  display: none;
+  position: relative;
+}
+
+#task-bar {
+  bottom: 0px;
+  left: 0px;
+  width: 595px;
+  height: 30px;
+  position: absolute;
+}
+
+#start {
+  width: 60px;
+}

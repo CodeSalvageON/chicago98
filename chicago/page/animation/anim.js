@@ -19,7 +19,21 @@ function bootUpLights () {
     windowLoader.style.backgroundColor = "black";
 
     $("#loading-screen").fadeIn(5000);
+
+    setTimeout(function () {
+      waitForElement("desktop", function () {
+        $("#loading-screen").fadeOut(5000);
+
+        setTimeout(function () {
+          $("#desktop").fadeIn(5000);
+        }, 5000);
+      });
+    }, 5000);
   }, 1500);
+}
+
+function bootUpDesktop () {
+  
 }
 
 waitForElement("loading-screen", function () {
