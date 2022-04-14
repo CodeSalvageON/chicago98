@@ -12,14 +12,16 @@ function bootUpLights () {
       windowLoader.style.backgroundColor = "black";
       bootColor = "black";
     }
-  }, 100);
+  }, 200);
 
   setTimeout(function () {
     clearInterval(bootInterval);
     windowLoader.style.backgroundColor = "black";
+
+    $("#loading-screen").fadeIn(5000);
   }, 1500);
 }
 
-waitForElement("window-loader", function () {
+waitForElement("loading-screen", function () {
   bootUpLights();
 });
