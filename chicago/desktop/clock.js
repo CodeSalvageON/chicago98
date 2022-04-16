@@ -9,6 +9,10 @@ function getTime (type) {
 
     case 1 :
       let getWeirdDate = parseInt(fullDate.getHours() / 2);
+      if (getWeirdDate === 0) {
+        getWeirdDate = 12;
+      }
+      
       let naturalDate = parseInt(fullDate.getHours());
 
       if (naturalDate > 12) {
