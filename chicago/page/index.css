@@ -46,10 +46,27 @@ body {
 }
 
 #timedate {
-  top: 5px;
+  top: 4px;
   width: 70px;
-  border-style: inset;
   right: 2px;
-  font-size: 15px;
-  position: absolute;l
+  height: 23px;
+  font-size: 14px;
+  position: absolute;
+}
+
+#timedate-border {
+  border-style: inset;
+  width: 70px;
+  height: 23px;
+  position: absolute;
+  top: 0px;
+  right: 2px;
+}
+
+#start-bar {
+  bottom: 30px;
+  left: 0px;
+  width: 150px;
+  position: absolute;
+  height: 350px;
 }
